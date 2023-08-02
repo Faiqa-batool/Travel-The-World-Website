@@ -1,0 +1,138 @@
+/*Start Global Style*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: url("assets/places-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+/* Add this CSS for the new layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.login,
+.register {
+    width: 50%;
+    background-color: #fafafa;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+    margin: 10px 0;
+}
+
+.register {
+    background-image: linear-gradient(135deg, #23212f 5%, #212446 95%);
+    color: #fff;
+}
+
+.login h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    background-color: #eeeeef;
+}
+
+.login a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s all ease-in-out;
+}
+
+.login a:hover {
+    color: #aaa9ae;
+    font-weight: bold;
+    color: black;
+}
+
+.login button {
+    width: 120%;
+    margin: 30px 0;
+    padding: 10px;
+    border: none;
+    background-color: #212446;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.login button:hover {
+    width: 117%;
+    font-size: 22px;
+    border-radius: 5px;
+}
+
+
+.login ul {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.login ul li {
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.login ul li:hover {
+    opacity: 0.6;
+}
+
+.login ul li:last-child {
+    margin-right: 0;
+}
+
+.register h2 {
+    margin: 30px 0;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.register p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.register button {
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.2s all ease-in-out;
+}
+
+.register button:hover {
+    color: #101011;
+    background-color: #fff;
+    cursor: pointer;
+}

@@ -1,0 +1,47 @@
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .card {
+
+            display: inline-block;
+            width: 300px;
+            margin: 120px 20px 20px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            font-size: 17px;
+            font-weight: bolder;
+            color: #4d4b4b;
+        }

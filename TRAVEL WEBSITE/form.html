@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/formstyle.css">
+    <title>Travel Website | Booking Form</title>
+    <style>
+        body{
+            background: url("./assets/places-bg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Booking Form</h1>
+
+    <form id="bookingForm" onsubmit="return submitForm(event)">
+        <label for="cardName">Place Selected:</label>
+        <input type="text" id="cardName" name="cardName" readonly>
+
+        <label for="stayDuration">Stay Duration (in days):</label>
+        <input type="number" id="stayDuration" name="stayDuration" required>
+
+        <label for="travelDate">Travel Date:</label>
+        <input type="date" id="travelDate" name="travelDate" required>
+
+        <label for="ticketCount">Number of Tickets:</label>
+        <input type="number" id="ticketCount" name="ticketCount" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <input type="submit" value="Submit">
+    </form>
+    <script src="./assets/js/form.js"></script>
+
+    <script>
+        // Get the query parameter values from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const cardName = urlParams.get('cardName');
+
+        // Pre-fill the cardName input field with the retrieved value
+        document.getElementById('cardName').value = cardName;
+    </script>
+
+</body>
+
+</html>
